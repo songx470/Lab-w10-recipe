@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Recipe</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Teko:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Fascinate&family=Teko:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="sticky">
+<a href="https://www.google.com/search?q=chicken+noodle+soup&client=firefox-b-1-d&sxsrf=ALeKk02lvvojPrlcXMAU4bebPWSmxfhIMQ:1616730224128&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjgmtO1hc3vAhWZJjQIHX0MCa4Q_AUoAnoECAEQBA&biw=1440&bih=826#imgrc=YL1fcz-WYNVhjM">🔍</a>
+</div>
+<div class="xsmall">
+<p id="recipeYield"></p>
+<p id="prepTime"></p>
+</div>
+</div>
+
+<h1 id="title"></h1>
+<p id="prepTime"></p>
+
+<div class="flex1">
+  <div class="des">
+  <p id="description"></p>
+<p id="recipeIngredient"></p>
+</div>
+<a><img src="img/1.jpeg" width="450" height="577"></a>
+<div class="instru">
+<h2 id="recipeInstructions"></h2>
+<h2 id="recipeInstructions2"></h2>
+<h2 id="cookTime"></h2>
+<h2 id="datePublished"></h2>
+</div>
+</div>
+
+<span id="author"></span>
+</body>
+
+<style>
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    height:20px;
+  width:20px;
+  margin-left:-3rem;
+  margin-top:-6rem;
+  background-color: yellow;
+  padding: 47px;
+  font-size: 20px;
+}
+</style>
+
+<script>
+const recipe = {
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "author": "@ceci",
+  "cookTime": "Cook for 8 minutes then add chopped chicken and egg nooldes.",
+  "datePublished": "Wait 10 minutes for everything to be cooked",
+  "description": "Homemade chicken noodle soup with many kinds of vegies based on personal taste created by Cecilia:D living a healty style with your favourite food!",
+  "image": "bananabread.jpg",
+  "recipeIngredient": [
+    " chicken",
+    "garlic clove",
+    "chopped vegies based on your choice",
+    "chicken broth"
+  ],
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/Comment",
+    "userInteractionCount": "140"
+  },
+  "name": "Homemade Chicken Noodle Soup",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "240 calories",
+    "fatContent": "9 grams fat"
+  },
+
+  "prepTime": "30min",
+  "recipeInstructions": "Get the ingredient ready and boil the water in the pot for 3 minutes.",
+  "recipeYield": "1 pot for",
+  "recipeInstructions2": "Add 5 cupts of Chicken broth and vegies."
+}
+
+const titleElement = document.getElementById("title");
+
+titleElement.innerText = recipe.name;
+
+document.getElementById("description").innerText = recipe.description;
+document.getElementById("author").innerText = recipe.author;
+document.getElementById("recipeIngredient").innerText = recipe.recipeIngredient;
+document.getElementById("recipeInstructions").innerText = recipe.recipeInstructions;
+document.getElementById("recipeInstructions2").innerText = recipe.recipeInstructions2;
+document.getElementById("cookTime").innerText = recipe.cookTime;
+document.getElementById("datePublished").innerText = recipe.datePublished;
+
+</script>
+</html> 
+

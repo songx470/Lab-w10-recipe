@@ -1,0 +1,61 @@
+body{
+  background-color:;
+  background-image: radial-gradient(circle, );
+  text-align:center;
+  padding:7rem;
+}
+
+h1{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:2.8rem;
+  margin-left:14rem;
+}
+
+p{
+
+}
+
+h2{
+  font-size:1.1rem;
+}
+
+a{
+  text-decoration:none;
+}
+
+.flex{
+  display:flex;
+  padding:10rem;
+  margin-top:-7rem;
+  margin-bottom:-10rem;
+}
+
+.flex1{
+  display:flex;
+
+}
+
+.xsmall{
+  display:flex;
+}
+
+.small{
+  margin-left:-2rem;
+  margin-top:-1rem;
+}
+
+#description{
+   padding:100px;
+
+}
+
+#recipeIngredient{
+  padding:100px;
+}
+
+.instru{
+  padding:80px;
+  background:lightgrey;
+  margin-left:10px;
+  margin-bottom:25px;
+}
