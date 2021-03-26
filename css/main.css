@@ -12,10 +12,13 @@ h1{
 }
 
 p{
+  font-family: 'Titillium Web', sans-serif;
 
 }
 
 h2{
+  line-height:1.5rem;
+  font-family: 'Titillium Web', sans-serif;
   font-size:1.1rem;
 }
 
@@ -28,6 +31,7 @@ a{
   padding:10rem;
   margin-top:-7rem;
   margin-bottom:-10rem;
+
 }
 
 .flex1{
@@ -45,7 +49,7 @@ a{
 }
 
 #description{
-   padding:100px;
+   padding:73px;
 
 }
 
@@ -57,5 +61,5 @@ a{
   padding:80px;
   background:lightgrey;
   margin-left:10px;
-  margin-bottom:25px;
+  margin-bottom:28px;
 }
